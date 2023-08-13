@@ -22,7 +22,7 @@ author: CutePixels Members
 navbar-links:
   About We: "aboutme"
   Projects:
-    - CutePixels Event: "https://github.com/CutePixels/CutePixelsEvent"
+    - Event-Bus: "https://github.com/CutePixels/CutePixelsEvent"
   Discord: "https://discord.gg/w473CyZbCN"
 
 ################
