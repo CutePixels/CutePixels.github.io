@@ -80,3 +80,21 @@ layout: base
     </div>
   </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var links = document.querySelectorAll("a");
+
+  for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+    var url = link.getAttribute("href");
+
+    if (url.startsWith("/") && !url.startsWith("#")) {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        var targetUrl = "https://cutepixels.github.io/link.html?target=" + this.getAttribute("href");
+        window.location.href = targetUrl;
+      });
+    }
+  }
+});
+</script>
